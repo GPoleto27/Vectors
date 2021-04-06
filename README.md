@@ -9,4 +9,7 @@ A C++ library for 3-dimensional vectors and polygons for computer graphics study
 Edit ```main.cpp``` to create a test code.
 
 ## Compile 
-``` g++ main.cpp Polygon.cpp Polygon.h Vector3.cpp Vector3.h -o main ```
+``` g++ main.cpp Polygon.cpp Polygon.h Vector3.cpp Vector3.h -o main.out ```
+
+## Run
+``` ./main.out ```
