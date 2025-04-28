@@ -1,5 +1,4 @@
-#ifndef POLYGON_INCLUDED
-#define POLYGON_INCLUDED
+#pragma once
 #include "Vector3.h"
 
 class Polygon
@@ -9,10 +8,12 @@ private:
     double area;
 
 public:
-    Polygon();
-    Polygon(Vector3 &a, Vector3 &b, Vector3 &c);
-    Vector3 getNormal();
-    double flatShading(Vector3 &ray);
-};
+    Polygon() = default;
+    Polygon(const Vector3 &a, const Vector3 &b, const Vector3 &c);
 
-#endif
+    Vector3 getNormal() const { return normal; }
+    Vector3 getCentroid() const { return centroid; }
+    double getArea() const { return area; }
+
+    double flatShading(const Vector3 &ray) const;
+};

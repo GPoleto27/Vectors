@@ -1,4 +1,7 @@
+app
+
+.vscode
+
 *.gch
 *.out
 *.o
-
